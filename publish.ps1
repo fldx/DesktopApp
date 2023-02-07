@@ -1,0 +1,1 @@
+﻿dotnet publish -c Release -p:EnableCompressionInSingleFile=true -p:PublishTrimmed=true
