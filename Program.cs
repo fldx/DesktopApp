@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using SharpWebview;
 using SharpWebview.Content;
 
@@ -13,7 +14,9 @@ namespace DesktopApp
         {
             // For a better startup expierience 
             // I recommend to init the HostedContent in advance
+            string location = null;
             var hostedContent = new HostedContent();
+            var targiet=Path.GetDirectoryName(location ?? "./");
 
             // Wrap the usage of the webview into a using block
             // Otherwise the native window will not get disposed correctly.
